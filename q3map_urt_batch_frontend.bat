@@ -17,7 +17,7 @@ set __ASS=-meta
 rem paths
 set __BasePath=C:\mapping\
 
-set __FSGame=urthdalpha1
+set __FSGame=q3ut4
 set __GameEXE=Quake3-UrT.exe
 set __CompilerPath=q3map_2.5.16_win32_x86\q3map2.exe
 set __BPSPath=compile\sfs\bsp.exe
@@ -72,6 +72,8 @@ start /low /B /wait %__BasePath%%__CompilerPath% -v -vis -fast -fs_basepath %__b
 time /T
 echo STARTING RAD:
 start /low /B /wait %__BasePath%%__CompilerPath% -v -light -fast -fs_basepath %__BasePath% -fs_game %__FSGame% "%~d1%~p1%~n1.bsp"
+
+pause
 
 goto :MainMenu
 
